@@ -1,17 +1,21 @@
+% !TeX spellcheck = da_DA-Danish
 \documentclass[10pt]{article}
 
 \usepackage{titlesec}
 \usepackage{multicol}
-%\usepackage{enumerate}
+\usepackage{titling}
+\usepackage{enumerate}
 \usepackage[shortlabels]{enumitem}
 \usepackage{amsmath}
+\usepackage{soul}
+\usepackage{titling}
 
-\title{Vedtægter for Fagrådet Sigma\\
-\large{23. maj 2023}}
-
+\preauthor{}\postauthor{}
+\title{Vedtægter for Fagrådet Sigma}
+\date{27. maj 2024}
 \author{}
 
-\titleformat{\section}{\normalfont\Large\bfseries}{\S\thesection}{1em}{}
+\titleformat{\section}{\normalfont\Large\bfseries}{\S\textsl{ }\thesection}{1em}{}
 
 \titleformat{\subsection}[runin]{\normalfont\normalsize\sffamily}{\textsl{Stk. \thesubsection}.}{0.5em}{}
 
@@ -23,189 +27,214 @@
 \newcommand{\fagrs}{\text{Fagrådet Sigmas}}
 
 \begin{document}
-\maketitle
-%\begin{multicols}{2}
-
-\sffamily
-
-\section{Navn og hjemsted}
-
-\subsection{Foreningens navn er \fagr{}.}
-
-\subsection{\fagr{} har hjemsted på Ny Munkegade 116 1, 8000 Aarhus C, lokale 1535-129.}
-
-\subsection{Foreningen tegnes af forpersonen og kassereren.}
-
-\section{Formål og tilhørsforhold}
-
-\subsection{\fagr{} repræsenterer studerende indskrevet på følgende institutter og centre, herefter betegnet som Faggruppen:}
-
-\begin{enumerate}[a), nosep]
-\item Institut for Matematik,
-\item Institut for Fysik og Astronomi,
-\item Institut for Datalogi,
-\item Institut for Kemi og
-\item Interdisciplinary Nanoscience Center.
-\end{enumerate}
-
-\subsection{\fagr{} har til formål at virke til gavn for de studerende i Faggruppen ved at varetage deres fælles faglige, økonomiske og sociale interesser.}\label{formaal:gavn}
-
-\subsection{\fagr{} udggør faggruppens repræsentation ved Studenterrådet ved Aarhus Universitet og lader sig derfor repræsentere i Studenterrådets fællesråd.}
-
-\subsection{\fagr{} opstiller kandidater til relevante udvalg og nævn, herunder Studienævnet og Akademisk Råd ved Faculty of Natural Sciences.}\label{formaal:opstilling}
-
-\subsection{Kandidater valgt i henhold til stk. \ref{formaal:opstilling} forpligter sig til at holde \fagr{} orienteret om deres virke og desuden bestræbe sig efter at repræsentere de studerendes interesser jf. stk. 2 i samarbejde med \fagr{} og dets holdninger som vedtaget på møder, generalforsamlinger og studentermøder.}
-
-\section{Generalforsamling}\label{gf}
-
-\subsection{Generalforsamlingen er \fagr{}s øverste myndighed.}
-
-\subsection{Den ordinære generalforsamling afholdes i fjerde kvartal og indkaldes af forpersonen med senest 28 dages varsel på \fagr{}s opslagstavle foran Matematisk Kantine og på \fagr{}s Facebook-side. Indkaldelse til den ordinære generalforsamling skal indeholde digital henvisning til det reviderede regnskab.}
-
-\subsection{Ekstaordinær generalforsamling kan til enhver tid indkaldes med 14 dages varsel, når do tredjedeles flertal af de indvalgte stiller krav herom. Der indgives skriftlig begæring til forpersonen, som herefter forestår indkaldelse i overensstemmelse med stk. \ref{formaal:gavn}.}
-
-\subsection{Generalforsamlingen er beslutningsdygtig, når den er indkaldt rettidigt, og dagsordenen er offentliggjort senest 7 dage før generalforsamlingens afholdelse på \fagr{}s opslagstavle foran Matematisk Kantine og på \fagr{}s Facebook-side.}
-
-\subsection{Generalforsamlingen træffer beslutninger ved simpelt flertal. Dog kræver vedtægtsændringer to tredjedeles flertal. Enhver studerende under Faggruppen har tal- og stemmeret.}
-
-\subsection{Kun studerende under Faggruppen kan opstille til valg i henhold til §\ref{gfi}, stk. \ref{gfi:dagsorden}, nr. 5, litra a-e. Opstilling kan se fysisk umiddelbart indene valget eller på forhånd ved skriftlig tilkendegivelse til forpersonen.}
-
-\subsection{Valg i henhold til §\ref{gfi}, stk. \ref{gfi:dagsorden}, nr. 5 afholdes ved simpelt flertal via håndsoprækning. En eller flere stemmeberettigede kan begære skriftlig og hemmelig afstemning.}
-
-\subsection{En person, der er valgt til én post i henhold til §\ref{gfi}, stk. \ref{gfi:dagsorden}, nr. 5 kan ikke vælges til andre poster. Valgte i henhold til §\ref{gfi}, stk. \ref{gfi:dagsorden}, nr., litra a-e, benævnes indvalgte.}
-
-\subsection{Dirigenten orienterer Studenterrådets Dirigentinstitution om generalforsamlingens valg af posterne beskrevet i §\ref{gfi}, stk. \ref{gfi:dagsorden}, nr. 5, litra a-c.}
-
-\section{Generalforsamlingens indhold}\label{gfi}
-
-\subsection{Dagsorden for den ordinære generalforsamling skal indeholde mindst følgende punkter:}\label{gfi:dagsorden}
-
-\begin{enumerate}[1), nosep]
-\item Formalia
-
-	\begin{enumerate}[a., nosep]
-	\item Valg af dirigent
-	\item Konstatering af beslutningsdygtighed
-	\item Valg af referent
-	\item Valg af stemmetællere
+	\maketitle
+	%\begin{multicols}{2}
+	
+	\sffamily
+	
+	\section{Navn og hjemsted}\label{navn}
+	
+	\subsection{Foreningens navn er \fagr{}.}\label{navn:navn}
+	
+	\subsection{\fagr{} har hjemsted på Ny Munkegade 116, 8000 Aarhus C, lokale 1535-129, \emph{herefter omtalt som Rådet, ved Aarhus Universitet.}}
+	
+	\subsection{Foreningen tegnes af forpersonen og kassereren.}
+	
+	\section{Foreningens formål og repræsentation}\label{formaal}
+	
+	\subsection{\fagr{} repræsenterer studerende indskrevet på følgende institutter og centre, herefter betegnet som Faggruppen:}
+	
+	\begin{enumerate}[a), nosep]
+		\item Institut for Matematik,
+		\item Institut for Fysik og Astronomi,
+		\item Institut for Datalogi,
+		\item Institut for Kemi og
+		\item Interdisciplinary Nanoscience Center.
 	\end{enumerate}
-\item Forpersonens beretning
-\item Kassererens beretning
-\item Studenterrådets beretning
-\item Valg af
-	\begin{enumerate}[a., nosep]
-	\item Forperson
-	\item Næstforperson
-	\item Kasserer
-	\item Intern revisor
-	\item Menigt indvalgte
-	\item Kritisk revisor
+	
+	\subsection{\fagr{} har til formål at virke til gavn for de studerende i Faggruppen ved at varetage deres fælles faglige og studierelaterede forhold og interesser..}\label{formaal:gavn}
+	
+	\subsection{\fagr{} udgør faggruppens repræsentation ved Studenterrådet ved Aarhus Universitet og lader sig derfor repræsentere i Studenterrådets fællesråd.}\label{formaal:repr}
+	
+	\subsection{\fagr{} opstiller kandidater til relevante udvalg og nævn, herunder Studienævnet og Akademisk Råd ved Faculty of Natural Sciences.}\label{formaal:opstilling}
+	
+	\subsection{Kandidater valgt i henhold til stk. \ref{formaal:opstilling} forpligter sig til at holde \fagr{} orienteret om deres virke og desuden bestræbe sig efter at repræsentere de studerendes interesser jf. stk. 2 i samarbejde med \fagr{} og dets holdninger som vedtaget på møder, generalforsamlinger og studentermøder.}
+	
+	\section{Generalforsamling}\label{gf}
+	
+	\subsection{Generalforsamlingen er \fagr{}s øverste myndighed.}
+	
+	\subsection{Den ordinære generalforsamling afholdes i andet kvartal og indkaldes af bestyrelsen med senest 21 dages varsel på \fagr{}s opslagstavle foran Matematisk Kantine og på \fagr{}s Facebook-side. Indkaldelse til den ordinære generalforsamling skal indeholde digital henvisning til regnskabet.}\label{gf:ordindkaldelse}
+	
+	\subsection{Ekstraordinær generalforsamling kan til enhver tid indkaldes med 14 dages varsel, når bestyrelsen eller to tredjedeles flertal af de indvalgte stiller krav herom, hvor der i så fald indgives skriftlig begæring til bestyrelsen, som herefter forestår indkaldelse, jf. stk. \ref{gf:rettid}.}\label{gf:ekstraindkaldelse}
+	
+	\subsection{Generalforsamlingen er beslutningsdygtig, når den er indkaldt rettidigt, og dagsordenen er offentliggjort senest 7 dage før generalforsamlingens afholdelse på \fagr{}s opslagstavle foran Matematisk Kantine og på \fagr{}s Facebook-side.}\label{gf:rettid}
+	
+	\subsection{Generalforsamlingen træffer beslutninger ved simpelt flertal (skarpt flere stemmer for end imod). Dog kræver vedtægtsændringer to tredjedeles flertal (mindst dobbelt så mange stemmer for som imod). Enhver studerende under Faggruppen har tale- og stemmeret.}
+	
+	\subsection{Kun studerende under Faggruppen kan opstille til valg i henhold til \ref{gfi}, stk. \ref{gfi:dagsorden}, nr. 5, litra a-e. Opstilling kan ske fysisk umiddelbart inden valget eller på forhånd ved skriftlig tilkendegivelse til bestyrelsen.}\label{gf:studerende}
+	
+	\subsection{Valg i henhold til § \ref{gfi}, stk. \ref{gfi:dagsorden}, nr. 5, afholdes ved simpelt flertal som freds- eller kampvalg. Ved valg til en enkeltpersonspost med mindst 3 kandidater bruges valgmetoden ”Exhaustive ballot”.}\label{gf:menigtindvalgte}
+	
+	\subsection{Alle valg til bestyrelsesposter samt kampvalg afholdes skriftligt. Øvrige valg og afstemninger afholdes ved håndsoprækning, medmindre en stemmeberettiget begærer skriftlig afstemning.}\label{gf:bestyrelsesvalgte}
+	
+	\subsection{En person, der er valgt til én post i henhold til § \ref{gfi}, stk. \ref{gfi:dagsorden}, nr. 5, kan ikke vælges til andre poster. Valgte i henhold til § \ref{gfi}, stk. \ref{gfi:dagsorden}, nr. 5, litra a-c, udgør bestyrelsen, jf. § \ref{Best}. Valgte i henhold til § \ref{gfi}, stk. \ref{gfi:dagsorden}, nr. 5, litra d-e, er menige medlemmer.}\label{gf:begrpost}
+	
+	\subsection{Dirigenten orienterer Studenterrådets Dirigentinstitution om generalforsamlingens valg af posterne beskrevet i § \ref{gfi}, stk. \ref{gfi:dagsorden}, nr. 5, litra a-c.}\label{gf:orienterer}
+	
+	\section{Generalforsamlingens indhold}\label{gfi}
+	
+	\subsection{Dagsorden for den ordinære generalforsamling skal indeholde mindst følgende punkter:}\label{gfi:dagsorden}
+	
+	\begin{enumerate}[1), nosep]
+		\item Formalia
+		
+		\begin{enumerate}[a., nosep]
+			\item Valg af dirigent
+			\item Konstatering af beslutningsdygtighed
+			\item Valg af referent
+			\item Valg af stemmetællere
+		\end{enumerate}
+		\item Forpersonens beretning
+		\item Kassererens beretning
+		\item Studenterrådets beretning
+		\item Indkomne forslag
+		\item Valg af
+		\begin{enumerate}[a., nosep]
+			\item Forperson
+			\item Næstforperson
+			\item Kasserer
+			\item Intern revisor
+			\item Menigt indvalgte
+			\item Ekstern revisor
+		\end{enumerate}
+		\item Dato for første møde i \fagr{}
+		\item Eventuelt
 	\end{enumerate}
-\item Indkomne forslag
-\item Dato for første møde i \fagr{}
-\item Eventuelt
-\end{enumerate}
-
-\subsection{På en ekstraordinær generalforsamling behandles altid punkterne i stk. \ref{gfi:dagsorden}, nr. 1, 6 og 8. Øvrige punkter fra stk. \ref{gfi} samt punkterne i øvrigt kan behandles, såfremt disse nævnes i begæringen. Der kan kun behandles indkomne forslag, som er indeholdt i begæringen.}
-
-\subsection{Forpersonens beretning, jf. stk. \ref{gfi}, nr. 2, skal som minimum indeholde oversigten over afholdte arrangementer i foreningens regi og andre politiske aktiviteter.}
-
-\subsection{Kassererens beretning, jf. stk. \ref{gfi}, nr. 3, skal som minimum indeholde fremlæggelse af det reviderede regnskab til godkende samt revisorernes fremlæggelse af bemærkninger til regnskabet.}
-
-\subsection{Studenterrådets beretning, jf. stk. \ref{gfi}, nr. 4, skal som minimum indeholde en oversigt over de vigtigste arrangementer i Studenterrådet med relevans for Faggruppen.}
-
-\subsection{Indkomne forslag, jf. stk. \ref{gfi}, nr. 6, kan indsendes af enhver studerende under Faggruppen og skal være forpersonen i hænde senest 14 dage før generalforsamlingens afholdelse.}
-
-\section{Studentermøder}
-
-\subsection{Studentermødet er Fagrådet Sigmas næstøverste myndighed.}
-
-\subsection{På studentermøder har alle studerende ved Faggruppen tale- og stemmret. De indvalgte kan herudover beslutte at give andre deltagere taleret.}
-
-\subsection{Studentermødet afholdes én gang årligt i forårssemestret og indkaldes af forpersonen med senest 28 dages varsel på Fagrådet Sigmas opslagstavle foran Matematisk Kantine og på \fagr{}s Facebook-side. Studentermødet er beslutningsdygtigt, når det er rettidigt indkaldt.}
-
-\subsection{Dagsordener på studentermødet skal som minimum indeholde:}
-
-\begin{enumerate}[1), nosep]
-\item Formalia
-	\begin{enumerate}[a., nosep]
-	\item Valg af dirigent blandt de indvalgte
-	\item Konstatering af beslutningsdygtighed
-	\item Valg af referent blandt de indvalgte
+	
+	\subsection{På en ekstraordinær generalforsamling behandles altid punkterne i stk. \ref{gfi:dagsorden}, nr. 1, 6 og 8. Øvrige punkter fra stk. \ref{gfi:dagsorden} samt punkter i øvrigt kan behandles, såfremt disse nævnes i begæringen. Der kan kun behandles indkomne forslag, som er indeholdt i begæringen.}\label{gfi:ekstra}
+	
+	\subsection{Forpersonens beretning, jf. stk. \ref{gfi:dagsorden}, nr. 2, skal som minimum indeholde oversigt over afholdte arrangementer i foreningens regi og andre relevante politiske aktiviteter.}
+	
+	\subsection{Kassererens beretning, jf. stk. \ref{gfi:dagsorden}, nr. 3, skal som minimum indeholde fremlæggelse af det påtegnede regnskab til godkendelse samt revisorernes fremlæggelse af bemærkninger til regnskabet.}
+	
+	\subsection{Studenterrådets beretning, jf. stk. \ref{gfi:dagsorden}, nr. 4, skal som minimum indeholde en oversigt over de vigtigste aktiviteter i Studenterrådet med relevans for Faggruppen.}
+	
+	\subsection{Indkomne forslag, jf. stk. \ref{gfi:dagsorden}, nr. 6, kan indsendes af enhver studerende under Faggruppen og skal være bestyrelsen i hænde senest 7 dage før generalforsamlingens afholdelse.}
+	
+	\section{Studentermøder}
+	
+	\subsection{Studentermødet er Fagrådet Sigmas næstøverste myndighed.}
+	
+	\subsection{På studentermøder har alle studerende ved Faggruppen tale- og stemmeret, og repræsentanter for Studenterrådet har taleret. De indvalgte kan herudover beslutte at give andre deltagere taleret.}
+	
+	\subsection{Studentermødet afholdes efter behov og indkaldes af bestyrelsen med senest 21 dages varsel på Fagrådet Sigmas opslagstavle foran Matematisk Kantine og på \fagr{}s Facebook-side. Studentermødet er beslutningsdygtigt, når det er rettidigt indkaldt.}
+	
+	\subsection{Dagsordenen til studentermødet skal som minimum indeholde:}
+	
+	\begin{enumerate}[1), nosep]
+		\item Formalia
+		\begin{enumerate}[a., nosep]
+			\item Valg af dirigent blandt de indvalgte
+			\item Konstatering af beslutningsdygtighed
+			\item Valg af referent blandt de indvalgte
+		\end{enumerate}
+		\item Bestyrelsens beretning om \fagr{}s arbejde
+		\item Debat
+		\item Eventuelt
 	\end{enumerate}
-\item Forpersonens beretning om \fagr{}s arbejde
-\item Debat
-\item Eventuelt
-\end{enumerate}
-
-\subsection{Beslutninger træffes ved simpelt flertal. Der kan ikke træffes beslutninger under punktet Eventuelt eller punkter, som ikke fremgik på dagsordenen ved indkaldelsen.}
-
-\section{Foreningens daglige ledelse}\label{dagligledelse}
-
-\subsection{\fagr{}s daglige ledelse udgøres af møderne i \fagr{}.}
-
-\subsection{På møder i \fagr{} har indvalgte tale- og stemmeret. Ligeledes har studerende under Faggruppen tale- og stemmeret. De indvalgte kan herudover beslutte at give andre deltagere taleret. Beslutninger træffes ved simpelt flertal.}
-
-\subsection{Forpersonen eller næstforpersonen indkalder til møde med dagsorden senest 2 dage før mødets afholdelse, hvorved mødet er beslutningsdygtigt. Der kan dispenseres fra dette ved afstemning.}
-
-\subsection{Dagsordenen skal som minimum indeholde:}
-
-\begin{enumerate}[1), nosep]
-\item Valg af dirigent og referent
-\item Konstatering og beslutningsdygtighed
-\item Godkendelse af dagsordenen
-\item Meddelelser fra:
-	\begin{enumerate}[a., nosep]
-	\item Eksterne udvalg, hvor Faggruppen er repræsenteret
-	\item Fællesrådet
-	\item Udvalg under Fagrådet Sigma
-	\item Underforeninger
+	
+	\subsection{Beslutninger træffes ved simpelt flertal. Der kan ikke træffes beslutninger under punktet Eventuelt eller punkter, som ikke fremgik på dagsordenen ved indkaldelsen.}\label{FRM:flertal}
+	
+	\section{Bestyrelsen}\label{Best}
+	
+	\subsection{Fagrådet Sigmas bestyrelse udgøres af forpersonen, næstforpersonen og kassereren indvalgt i henhold til § \ref{gfi}, stk. \ref{gfi:dagsorden}, nr. 5, litra a-c.}
+	
+	\subsection{Såfremt et medlem af bestyrelsen udtræder inden den kommende ordinære generalforsamling, har den resterende bestyrelse pligt til at indkalde til en ekstraordinær generalforsamling, jf. § \ref{gf}, stk. \ref{gf:ekstraindkaldelse}, indenfor 14 dage. § \ref{gfi}, stk. \ref{gfi:dagsorden}, pkt. 5, litra a-c skal da som minimum også være indeholdt.}
+	
+	\subsection{Bestyrelsen har ansvaret for driften af foreningen og skal handle inden for rammerne af beslutningerne truffet på fagrådsmøder jf. § \ref{FRM}.}
+	
+	\subsection{Bestyrelsen varetager forvaltningen af lokalet Rådet på vegne af Fagrådet Sigma, herunder kommunikation med eksterne foreninger omkring brug og rengøring af lokalet samt udlån af og regnskab over lokalenøgler.}
+	
+	\section{Fagrådsmøder}\label{FRM}
+	
+	\subsection{Fagrådsmøder fastlægger rammerne for Fagrådet Sigmas virke.}\label{FRM:daglig}
+	
+	\subsection{På fagrådsmøder har indvalgte tale- og stemmeret. Ligeledes har studerende under Faggruppen tale- og stemmeret, og repræsentanter for Studenterrådet har taleret. De indvalgte kan herudover beslutte at give andre deltagere taleret.}\label{FRM:stemmeret}
+	
+	\subsection{Enkeltpersoner, der ikke er indvalgte, kan fratages deres stemmeret forud for en afstemning, såfremt et flertal blandt de indvalgte stemmer for. Beslutningen skal begrundes, og den pågældende skal have anledning til at tale sin sag inden afstemningen.}
+	
+	\subsection{Bestyrelsen indkalder til møde med dagsorden senest 2 dage før mødets afholdelse, hvorved mødet er beslutningsdygtigt. Der kan dispenseres fra dette ved afstemning, hvis mindst halvdelen af de indvalgte er til stede, og hvis mindst to tredjedele stemmer for.}\label{FRM:indkaldelse}
+	
+	\subsection{Dagsordenen skal som minimum indeholde:}\label{FRM:dagsorden}
+	
+	\begin{enumerate}[1), nosep]
+		\item Valg af dirigent og referent
+		\item Konstatering af beslutningsdygtighed
+		\item Godkendelse af dagsordenen
+		\item Meddelelser fra:
+		\begin{enumerate}[a., nosep]
+			\item Eksterne udvalg, hvor Faggruppen er repræsenteret
+			\item Fællesrådet
+			\item Udvalg under Fagrådet Sigma
+			\item Underforeninger
+		\end{enumerate}
+		\item Valg af menigt indvalgte efter proceduren i § \ref{gf}, stk. \ref{gf:studerende}-\ref{gf:begrpost}
+		\item Planlægning af næste møde
+		\item Eventuelt
 	\end{enumerate}
-\item Valg af menigt indvalgte efter proceduren i § \ref{gf}, stk. 6-8
-\item Planlægning af næste møde
-\item Eventuelt
-\end{enumerate}
-
-\subsection{Beslutninger træffes ved simpelt flertal. Der kan ikke træffes beslutninger under punktet Eventuelet eller punkter, som ikke fremgik på dagsordenen ved inkaldelsen,}
-
-\subsection{Referatet offentliggøres senest 7 dage efter mødet. Referanten kan træffe beslutning om begrænset offenetliggørelse af specifikke punkter.}
-
-\section{Økonomi og revision}
-
-\subsection{Kassereren fører løbende regnskab og tilsyn med \fagr{}s økonomi og bistår revisorerne med fremskaffelse af kontoudtog og øvrige bilag til regnskabet.}
-
-\subsection{Udlæg, der overstiger 2.000 kr., skal godkendes på et møde i \fagr{}, jf. § \ref{dagligledelse}.}
-
-\subsection{Revisorerne skal inden den ordinære generalforsamling gennemgå regnskabet og kontrollere, at det stemmer overens med beholdningerne. Den kritiske revisor påtegner regnskabet.}
-
-\section{Underforeninger}
-
-\subsection{En underforening af \fagr{} er en forening nævnt i stk. \ref{underforeninger:liste}, som repræsenterer en eller flere uddannelser i Faggruppen, og som i sine vedtægter forpligter sig til bestemmelser i nærværende paragraf. Medlemmer af en underforening er ikke nødvendigvis medlemmer i \fagr{}.}
-
-\subsection{Følgende foreninger er underforeninger af \fagr{}:}\label{underforeninger:liste}
-
-\begin{enumerate}[a), nosep]
-\item Institut for Fysik \& Astronomi StudenterRepræsentation ("ISR")
-\end{enumerate}
-
-\subsection{Underforeninger sender mødereferater til \fagr{} og underretter regelmæssigt forpersonen i \fagr{} om status i underforeningen.}
-
-\subsection{En underforening kan udmeldes af \fagr{}, hvis det vedtages ved en generalforsamling i underforeningen. For foreninger, der ikke har generalforsamlinger, skal der stemmes for ved et studentermøde og et internt møde i underforeningen. Ved udmeldelse fjernes underforeningen automatisk fra listen i stk. \ref{underforeninger:liste}.}
-
-\section{Opløsning af foreningen}
-
-\subsection{\fagr{} kan opløses, hvis dette besluttes på en ekstraordinær generalforsamling og bekræftes indenfor 28 dage på endnu en ekstraordinær generalforsamling. På begge forsamlinger kræves to tredjedeles flertal.}
-
-\subsection{Ved opløsning af \fagr{} overgår aktiver til Studenterrådet ved Aarhus Universitet med henstilling til at aktiverne skal bruges til gavn for \fagr{} Faggruppe.}
-
-\section*{}
-
-\itshape{Ændring af statutten er foretaget på generalforsamlingen d. 27 marts 2021}
-
-\noindent
-\itshape{Ændring af statutten er foretaget på generalforsamlingen d. 7 december 2022}
-
-\noindent
-\itshape{Ændring af statutten er foretaget på generalforsamlingen d. 23 maj 2023}
-%\end{multicols}
+	
+	\subsection{Beslutninger træffes ved simpelt flertal. Der kan ikke træffes beslutninger under punktet Eventuelt eller punkter, som ikke fremgik på dagsordenen ved indkaldelsen,}\label{FRM:beslutninger}
+	
+	\subsection{Referatet offentliggøres senest 7 dage efter mødet. Referenten kan træffe beslutning om begrænset offentliggørelse af specifikke punkter.}
+	
+	\section{Økonomi og revision}\label{revision}
+	
+	\subsection{Kassereren fører løbende regnskab og tilsyn med \fagr{}s økonomi og bistår revisorerne med fremskaffelse af kontoudtog og øvrige bilag til regnskabet.}
+	
+	\subsection{Udlæg, der overstiger 2.000 kr., skal godkendes på et fagrådsmøde}
+	
+	\subsection{Den indvalgte interne og eksterne revisor, jf. § \ref{gfi}, stk. \ref{gfi:dagsorden}, pkt. 5, litra d og f, betegnes samlet som den kritiske revision.}
+	
+	\subsection{Den kritiske revision skal inden den ordinære generalforsamling gennemgå regnskabet og kontrollere, at det stemmer overens med beholdningerne. Den kritiske revision påtegner regnskabet.}\label{revision:kritiske}
+	
+	\section{Underforeninger}\label{underforeninger}
+	
+	\subsection{En underforening af \fagr{} er en forening nævnt i stk. \ref{underforeninger:liste}, som repræsenterer en eller flere uddannelser i Faggruppen, og som i sine vedtægter forpligter sig til bestemmelserne i nærværende paragraf. Medlemmer af en underforening er ikke nødvendigvis medlemmer af \fagr{}.}
+	
+	\subsection{Følgende foreninger er underforeninger af \fagr{}:}\label{underforeninger:liste}
+	
+	\begin{enumerate}[a), nosep]
+		\item Institut for Fysik \& Astronomi StudenterRepræsentation ("ISR")
+	\end{enumerate}
+	
+	\subsection{Underforeninger sender mødereferater til \fagr{} og underretter regelmæssigt bestyrelsen i \fagr{} om status i underforeningen.}
+	
+	\subsection{En underforening kan udmeldes af \fagr{}, hvis det vedtages ved en generalforsamling i underforeningen. For underforeninger, der ikke har generalforsamlinger, skal der stemmes for ved et studentermøde og et internt møde i underforeningen. Ved udmeldelse fjernes underforeningen automatisk fra listen i stk. \ref{underforeninger:liste}.}
+	
+	\section{Opløsning af foreningen}
+	
+	\subsection{\fagr{} kan opløses, hvis dette besluttes på en ekstraordinær generalforsamling og bekræftes indenfor 28 dage på endnu en ekstraordinær generalforsamling. På begge generalforsamlinger kræves to tredjedeles flertal.}
+	
+	\subsection{Ved opløsning af \fagr{} overgår aktiver til Studenterrådet ved Aarhus Universitet med henstilling til at aktiverne skal bruges til gavn for \fagr{}s Faggruppe.}
+	
+	\section*{}
+	
+	\textit{Ændring af statutten er foretaget på generalforsamlingen d. 27. marts 2021}
+	
+	\noindent
+	\textit{Ændring af statutten er foretaget på generalforsamlingen d. 7. december 2022}
+	
+	\noindent
+	\textit{Ændring af vedtægterne foretaget på generalforsamlingen d. 23. maj 2023}
+	
+	\noindent
+	\textit{Ændring af vedtægterne foretaget på generalforsamlingen d. 13. december 2023}
+	
+	\noindent
+	\textit{Ændring af statutten er foretaget på generalforsamlingen d. 27. maj 2024}
+	
+	
+	\include{forslag}
+	%\end{multicols}
 \end{document}
